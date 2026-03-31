@@ -182,3 +182,70 @@
   margin-bottom: 100px;
   margin-top: 15px;
 }
+
+.portfolio_class{
+    margin:50px auto;
+}
+
+.portfolio-title{
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+}
+
+.portfolio-text{
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    padding-top: 35px;
+    padding-bottom: 60px;
+}
+
+.portfolio_list{
+    display: flex;
+    gap:100px;
+}
+
+.portfolio_item{
+    border-radius: 16px;
+    display:flex;
+    width:330px;
+    flex-wrap: wrap;
+    background: #fff;
+    overflow:hidden;
+}
+
+.portfolio-item-name{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #132238;
+    padding:18px 24px;
+}
+
+.portfolio-item-text{
+    padding:18px 24px;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: justify;
+    color: #556070;
+}
+
+.portfolio_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 117px;
+    padding: 12px 27px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 8px;
+    background-color: #27ae60;
+    margin: 16px 24px;
+    transition: background-color 0.4s ease-out;
+}
+
+.portfolio_link:hover{
+    background-color: darkgreen;
+}
