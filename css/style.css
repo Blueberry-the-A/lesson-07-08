@@ -3,6 +3,11 @@
 
 .header{
     padding: 32px 0;
+    background-color: #27AE60;
+    position:sticky;
+    width:100%;
+    top:0;
+    z-index: 100;
 }
 
 .header__wrapper{
@@ -30,8 +35,25 @@
     transition: color 0.4s ease-out;
 }
 
+.navigation__link::before{
+    content: "";
+    margin-right:8px;
+    display: inline-block;
+    background-color:lightgreen;
+    width:10px;
+    height:10px;
+    border-radius:70%;
+    transform: scale(0);
+    transition:transform 0.4s ease-out;
+}
+
+.navigation__link:hover::before{
+   content: "";
+   transform: scale(1);
+}
+
 .navigation__link:hover{
-    color:lightgreen
+    color:lightgreen;
 }
 
 .hero{
@@ -86,6 +108,36 @@
 
 .hero-actions__link:hover{
     background-color: darkgreen;
+}
+
+.status::before{
+    content:"";
+    position:absolute;
+    display:inline-block;
+    width:32px;
+    height:32px;
+    bottom:58px;
+    border-radius: 100%;
+    background-color: #34c759;
+    right:65px;
+    border: 2px solid white;
+}
+
+.status::after{
+    content:"#open_to_work 👨‍💻";
+    position:absolute;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #ebebeb;
+    width:160px;
+    height:56px;
+    bottom:70px;
+    right:340px;
 }
 
 .hero__ava{
@@ -200,6 +252,7 @@
 }
 
 .portfolio-text{
+    width:650px;
     font-weight: 400;
     font-size: 18px;
     color: #fff;
@@ -225,6 +278,10 @@
     padding:18px 24px;
 }
 
+.portfolio_img{
+    position: relative;
+}
+
 .portfolio-item-name{
     font-weight: 600;
     font-size: 16px;
@@ -240,6 +297,10 @@
 }
 
 .portfolio_link{
+    text-transform: uppercase;
+    position:absolute;
+    left:45%;
+    top: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,4 +316,76 @@
 
 .portfolio_link:hover{
     background-color: darkgreen;
+}
+
+.contacts{
+    margin:70px auto;
+}
+
+.contacts-container{
+    width:441px;
+}
+
+.contacts-title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    color: #fff;
+}
+
+.contacts-text{
+    margin-top:10px;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.contacts-list{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+
+.contacts-img{
+    list-style:inside;
+}
+
+
+.contacts-list_item{
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.footer_class{
+    margin:30px auto;
+}
+
+.footer_list{
+    display:flex;
+    gap:8px;
+}
+
+.footer_list_item{
+    display:flex;
+}
+
+.footer-list-it-bg{
+    width: 40px;
+    height: 40px;
+    background-color:#27ae60;
+    border-radius: 100%;
+}
+
+.footer_img{
+    justify-content: center;
+    align-self: center;
+}
+
+.footer_text{
+    font-weight: 500;
+    font-size: 14px;
+    color: #e5e5ea;
 }
