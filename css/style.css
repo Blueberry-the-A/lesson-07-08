@@ -1,6 +1,10 @@
 @import "./base.css";
 @import "./container.css";
 
+html{
+    scroll-behavior: smooth;
+}
+
 .header{
     padding: 32px 0;
     background-color: #27AE60;
@@ -152,6 +156,27 @@
     align-items: center;
 }
 
+.button_up{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: #27AE60;
+    position:fixed;
+    bottom:6%;
+    right:6%;
+    z-index: 50;
+    transition: background-color 0.4s ease-out;
+    transition: transform 0.4s ease-out;
+}
+
+.button_up:hover{
+    background-color: darkgreen;
+    transform:scale(1.15);
+}
+
 .about{
     padding: 72px 0;
 }
@@ -297,10 +322,11 @@
 }
 
 .portfolio_link{
+    transform: scale(1);
     text-transform: uppercase;
     position:absolute;
     left:45%;
-    top: 50%;
+    top: 54%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,10 +338,20 @@
     border-radius: 8px;
     background-color: #27ae60;
     transition: background-color 0.4s ease-out;
+    transition: transform 0.4s ease-out;
 }
 
 .portfolio_link:hover{
     background-color: darkgreen;
+    transform:scale(1.15);
+}
+
+.portf_link1{
+    left:10%;
+}
+
+.portf_link2{
+    left:80%;
 }
 
 .contacts{
@@ -386,6 +422,7 @@
 }
 
 .footer-list-it-bg{
+    transform: scale(1);
     display: flex;
     width: 40px;
     height: 40px;
@@ -394,7 +431,7 @@
     justify-content: center;
     align-items: center;
     transition: background-color 0.4s ease-out;
-    transition: scale(1) 0.4s ease-out;
+    transition: transform 0.4s ease-out;
 }
 
 .footer-list-it-bg:hover{
