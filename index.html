@@ -18,7 +18,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="start">
       <div class="container">
         <div class="header__wrapper">
           <a class="logo" href="./">Logo</a>
@@ -39,7 +39,7 @@
       </div>
     </header>
     <main>
-      <section class="hero" id="start">
+      <section class="hero">
         <div class="container">
           <div class="hero__wrapper">
             <div class="hero_inner">
@@ -153,27 +153,33 @@
           <p class="portfolio-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa dolores reiciendis aspernatur odit autem, dolore temporibus et optio!</p>
           <ul class="portfolio_list">
             <li class="portfolio_item">
-              <img src="./img/code_img.jpg" class="portfolio_img" width="330" height="220" alt="computer with a lot of code">
+              <div class="live_page_wrapper">
+                <img src="./img/code_img.jpg" class="portfolio_img" width="330" height="220" alt="computer with a lot of code">
+                <a class="portfolio_link portf_link1" href="#">Live page</a>
+              </div>
               <div class="portfolio_inside">
                 <h3 class="portfolio-item-name">Product Admin Dashboard</h3>
                 <p class="portfolio-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate qui repellendus incidunt aut excepturi saepe odit dolorum, eius tenetur, eum, consectetur minima?</p>
-                <a class="portfolio_link portf_link1" href="#">Live page</a>
               </div>
             </li>
             <li class="portfolio_item">
-              <img src="./img/creativity_img.jpg" class="portfolio_img" width="330" height="220" alt="drawing creative ideas">
+              <div class="live_page_wrapper">
+                <img src="./img/creativity_img.jpg" class="portfolio_img" width="330" height="220" alt="drawing creative ideas">
+                <a class="portfolio_link" href="#">Live page</a>
+              </div>
               <div class="portfolio_inside">
                 <h3 class="portfolio-item-name">Website Store</h3>
                 <p class="portfolio-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate qui repellendus incidunt aut excepturi saepe odit dolorum, eius tenetur, eum, consectetur minima?</p>
-                <a class="portfolio_link" href="#">Live page</a>
               </div>
             </li>
             <li class="portfolio_item"> 
-              <img src="./img/white_board_img.jpg" class="portfolio_img" width="330" height="220" alt="white boards with ideas">
+              <div class="live_page_wrapper">
+                <img src="./img/white_board_img.jpg" class="portfolio_img" width="330" height="220" alt="white boards with ideas">
+                <a class="portfolio_link portf_link2" href="#">Live page</a>
+              </div>
               <div class="portfolio_inside">
                 <h3 class="portfolio-item-name">Modern App with AI</h3>
                 <p class="portfolio-item-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate qui repellendus incidunt aut excepturi saepe odit dolorum, eius tenetur, eum, consectetur minima?</p>
-                <a class="portfolio_link portf_link2" href="#">Live page</a>
               </div>
             </li>
           </ul>
@@ -186,16 +192,22 @@
         <p class="contacts-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa dolores reiciendis aspernatur odit autem, dolore temporibus et optio!</p>
         <ul class="contacts-list">
           <li class="contacts-list_item">
-            <img class="contacts-img" src="./img/phone-icon.svg" width="24" height="24" alt="phone icon">
-            <p class="contacts-list_text">067 123 45 67</p>
+            <a href="tel:+380671234567" class="contact_link">
+              <img class="contacts-img" src="./img/phone-icon.svg" width="24" height="24" alt="phone icon">
+              067 123 45 67
+            </a>
+          </li>
+          <li class="contacts-list_item" target="_blank">
+            <a href="mailto:johndoe@gmail.com" class="contact_link">
+              <img class="contacts-img" src="./img/mail-icon.svg" width="24" height="24" alt="mail icon">
+              johndoe@gmail.com
+            </a>
           </li>
           <li class="contacts-list_item">
-            <img class="contacts-img" src="./img/mail-icon.svg" width="24" height="24" alt="mail icon">
-            <p class="contacts-list_text">johndoe@gmail.com</p>
-          </li>
-          <li class="contacts-list_item">
-            <img class="contacts-img" src="./img/map-icon.svg" width="24" height="24" alt="map icon">
-            <p class="contacts-list_text">Ukraine, Kyiv</p>
+            <a class="contact_link" href="https://maps.app.goo.gl/MveCX2gXj92eF2cd7" target="_blank">
+              <img class="contacts-img" src="./img/map-icon.svg" width="24" height="24" alt="map icon">
+              Ukraine, Kyiv
+            </a>
           </li>
         </ul>
         </div>
