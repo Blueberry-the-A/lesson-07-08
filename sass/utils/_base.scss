@@ -17,6 +17,9 @@ ul{
 
 body{
   font-family: "DM Sans", sans-serif;
-  background-color: rgb(17,17,17);
+  background-color: var(--bg-color)
 }
 
+html{
+    scroll-behavior: smooth;
+}
